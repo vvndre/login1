@@ -1,0 +1,15 @@
+4 routes
+
+POST /register: takes in a email and password, add a user row in the users tables
+
+POST /login: checks the email and password against the users tables
+    (new) and returns a jsonWeb Token if the user is authenticated correctly 
+
+GET /hello: this route responds w a generic message. does not matter iof the user is authenticated or not
+
+GET /secretHandshake: this route responds with a personalized msg only if the user is authenticated.
+    This route is expecting the JSONWeb Token
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9. 
+eyJpZCI6NiwiZW1haWwiOiJhbmRyZTEyM0BnbWFpbC5jb20iLCJpYXQiOjE2ODg0MzE5MDQsImV4cCI6MTY4ODUxODMwNH0.
+Dtj1kVG9O9iM7GDpczEX7ICGTKgTlzGHcfDblSY8xpc
